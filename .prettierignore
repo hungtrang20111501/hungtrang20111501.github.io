@@ -16,5 +16,4 @@ visualizer/
 assets/css/*
 !assets/css/responsive.css
 !assets/css/style.css
-assets/js/*
-!assets/js/script.js
+assets/js/jquery-plugin-collection.js

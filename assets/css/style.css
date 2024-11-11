@@ -764,7 +764,6 @@ header#inner-navigation {
     line-height: 23px;
   }
   #inner-navigation .navbar.navbar-default {
-    /*padding:10px 0*/
   }
 }
 #inner-navigation .navbar-sticky-in {
@@ -795,7 +794,6 @@ header#inner-navigation {
 }
 @media only screen and (max-width: 1200px) {
   #inner-navigation .navbar.navbar-default {
-    /*padding:10px*/
   }
   .sticky .slicknav_btn.slicknav_open:before,
   .sticky .slicknav_btn.slicknav_collapsed:before {
@@ -998,7 +996,6 @@ header#inner-navigation {
   border-top: 1px solid #fff;
   right: -19px;
 }
-
 .col-lg-8.my-auto {
   display: block;
   margin: 165px auto 0;
@@ -1042,7 +1039,7 @@ header#inner-navigation {
   padding: 0;
   position: relative;
   position: relative;
-  z-index: 0; /*height:658px;*/
+  z-index: 0;
 }
 #wd-banner .swiper-container {
   height: 100%;
@@ -1299,7 +1296,7 @@ header#inner-navigation {
 #wd-banner.mt_video .banner_caption_text h1 {
   font-size: 60px;
   line-height: 1.3;
-  text-transform: uppercase; /*margin-bottom:*/
+  text-transform: uppercase;
 }
 #wd-banner .banner_caption_text h1 span {
   display: block;
@@ -1315,15 +1312,11 @@ header#inner-navigation {
   line-height: 1.5;
   margin-bottom: 0;
   padding: 12px 35px;
-  text-transform: uppercase; /*display:inline-flex;*/
-
-  /*align-items:center;*/
-
-  /*justify-content:center;*/
+  text-transform: uppercase;
 }
 .text-date p span {
   display: block;
-  font-size: 28px; /*padding-left:15px*/
+  font-size: 28px;
 }
 #wd-banner.mt_video .banner_caption_text p {
   margin-top: 0;
@@ -1585,12 +1578,6 @@ header#inner-navigation {
   position: absolute;
   right: 0;
 }
-/*.wd-slide #kenburns_061{*/
-
-/*    max-height:900px*/
-
-/*}
-*/
 #wd-banner.wd-slider-ot .banner_caption_text {
   top: 28%;
   width: 50%;
@@ -1698,7 +1685,7 @@ header#inner-navigation {
   background: #ffffff2e;
 }
 #about-us {
-  position: relative; /*padding-bottom:0*/
+  position: relative;
 }
 .home-1 #about-us {
   padding-top: 40px;
@@ -1767,7 +1754,7 @@ header#inner-navigation {
   display: flex;
   margin: 20px 0;
   position: relative;
-  z-index: 3; /*min-height:300px*/
+  z-index: 3;
 }
 .the-couple.bride {
   z-index: 2;
@@ -1776,10 +1763,8 @@ header#inner-navigation {
   flex-direction: row-reverse;
 }
 .the-couple.uncle .about-couple {
-  /* margin-right: -20px; */
 }
 .the-couple.bride .about-couple {
-  /* margin-left: -20px; */
 }
 .about-top {
   display: flex;
@@ -1849,10 +1834,6 @@ header#inner-navigation {
   top: -14%;
 }
 .about-couple {
-  /* position: absolute; */
-  /* right: 0; */
-  /* top: 15px; */
-  /* width: calc(100% - 190px); */
 }
 .about-couple.about-couple-1 {
   left: 0;
@@ -1871,7 +1852,7 @@ header#inner-navigation {
   border: 8px solid #fff;
   border-radius: 10px;
   box-shadow: 0 5px 35px #e4e4e4;
-  padding: 20px 30px; /*margin-top:45px;*/
+  padding: 20px 30px;
 }
 .cp-detail p {
   font-size: 16px;
@@ -2133,13 +2114,12 @@ section#our-story {
   display: inline-block;
   margin-bottom: 50px;
   padding: 0 30px;
-  width: 91%; /*margin-top:35px;*/
+  width: 91%;
 }
 .story-rt .expand-story {
-  margin-right: 0; /*margin-left:25px*/
+  margin-right: 0;
 }
 .story-head h6 {
-  /*padding:0 45px;*/
   font-family: dosis, sans-serif;
   font-weight: 400;
 }
@@ -2170,14 +2150,13 @@ section#our-story {
   transform: rotate(180deg);
 }
 .story-head:before {
-  /*border-radius:50%*/
   border-right: 2px dashed #ec2328;
   bottom: -270px;
   content: '';
   height: 250px;
   position: absolute;
   right: -30px;
-  width: 2px; /*background:#ec2328;*/
+  width: 2px;
 }
 .story-rt .expand-story .story-head:before {
   left: -30px;
@@ -2301,7 +2280,7 @@ section.section-padding.our-story {
   padding: 25px;
   position: relative;
   text-align: left;
-  z-index: 1; /*background:#ebebeb;*/ /*border:5px solid #fff;*/
+  z-index: 1;
 }
 .event-stack h3 {
   padding-bottom: 10px;
@@ -2334,7 +2313,7 @@ section.section-padding.our-story {
   display: inline-block;
   font-size: 16px;
   margin-bottom: 0;
-  width: 100%; /*text-align:center;*/ /*padding:10px 8px 10px 0;*/
+  width: 100%;
 }
 .event-stack a.read-btn {
   margin-top: 0;
@@ -2676,7 +2655,6 @@ ul.gallery li.active {
   padding: 0 5px;
 }
 .wide-gallery .col-md-4:nth-child(n + 7) {
-  /*display:none;*/
 }
 .drop-left .col-md-8 {
   padding-left: 9px;
@@ -2697,7 +2675,6 @@ ul.gallery li.active {
   padding-top: 5px;
 }
 .wide-gallery .item img {
-  /*border-radius:10px*/
 }
 .gallery-quote {
   padding: 5px 0;
@@ -4246,7 +4223,7 @@ a.read-btn:hover {
 }
 .widget-rsvp {
   margin: 0 auto 40px;
-  position: relative; /*padding:30px;*/
+  position: relative;
 }
 .widget-rsvp .widget-title {
   color: #333;
@@ -4344,11 +4321,6 @@ textarea.form-control {
   transition: all 0.5s;
 }
 .ft-about-content form button.btn:hover {
-  /*border-color:#ec2328;*/
-
-  /*background:white;*/
-
-  /*color:#ec2328;*/
 }
 button.btn:hover,
 .btn-info:active:hover,
@@ -4383,9 +4355,7 @@ button.btn:hover,
   margin-top: 10px;
   padding: 0 15px 35px 15px;
   width: 100%;
-  z-index: 1; /*box-shadow:0 0 20px #cf878775;*/
-
-  /*border:3px dashed #f23b43;*/
+  z-index: 1;
 }
 .latest-posts-widget,
 .wish-box {
@@ -4424,7 +4394,7 @@ ul.insta-info-list {
   padding-bottom: 35px;
   position: relative;
   text-align: center;
-  z-index: 1; /*padding:135px 0;*/
+  z-index: 1;
 }
 .footer-note:before {
   background: url(../images/footer-c.png);
@@ -4903,9 +4873,7 @@ ul.insta-info-list {
   max-width: 700px;
 }
 .event-stack ul {
-  display: inline-block; /*margin-right:auto;*/
-
-  /*margin-left:auto;*/
+  display: inline-block;
 }
 .event-stack a {
   display: block;
@@ -4993,7 +4961,6 @@ ul.insta-info-list {
     text-align: center;
   }
 }
-/*section video*/
 .event-section {
   padding-bottom: 0;
   padding-top: 0;
@@ -5031,7 +4998,7 @@ ul.insta-info-list {
   position: relative;
   text-align: center;
   top: 0;
-  width: 100%; /*border-top:3px solid #DF4758;*/
+  width: 100%;
 }
 .video-section p,
 .event-section h2,
@@ -5060,7 +5027,6 @@ ul.insta-info-list {
   top: 0;
   width: 100%;
 }
-/* Acessbilities Buttons */
 #menu-access {
   bottom: 226px;
   height: 40px;
@@ -5244,7 +5210,6 @@ ul.insta-info-list {
 .btn:hover > span > .access-section-icon {
   filter: invert(0);
 }
-/* ALBUM GALLERIES */
 #btn-see-more-gallery {
   background: #ec2328;
   border-radius: 50px;
@@ -5399,7 +5364,6 @@ textarea#content {
   display: inline-block;
   position: relative;
 }
-/* dresscode */
 #wedding-event .image-wrap {
   display: flex;
   justify-content: center;
@@ -5498,15 +5462,12 @@ textarea#content {
   background-color: #ff1a1a;
   border-left: 5px solid red;
 }
-
 .section-heading {
   text-align: center;
-
   h3 {
     font-size: 35px;
   }
 }
-
 .wedding-event .section-title h2.ht-guest.guest {
   color: red;
 }

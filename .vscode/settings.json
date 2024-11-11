@@ -1,3 +1,11 @@
 {
-  "cSpell.words": ["Hoàng", "Hưng", "hungtrang", "Parens", "Trang"]
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "editor.bracketPairColorization.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }

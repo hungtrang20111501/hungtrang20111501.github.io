@@ -1361,12 +1361,16 @@ header#inner-navigation {
   content: '\f104';
   font-family: 'FontAwesome';
   font-size: 20px;
+  line-height: 1;
+  padding-right: 4px;
 }
 .hero-slider .swiper-button-next:before {
   color: #3e7884;
   content: '\f105';
   font-family: 'FontAwesome';
   font-size: 20px;
+  line-height: 1;
+  padding-left: 4px;
 }
 @media (max-width: 991px) {
   .hero-slider .swiper-button-prev,
@@ -2296,9 +2300,9 @@ section.section-padding.our-story {
   text-align: left;
 }
 .event-stack ul li {
-  color: #333;
+  color: #000;
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
   padding: 5px 15px 5px 0;
 }
 .event-stack ul li:last-child {
@@ -2310,6 +2314,7 @@ section.section-padding.our-story {
   width: 15px;
 }
 .event-stack p {
+  color: #000;
   display: inline-block;
   font-size: 16px;
   margin-bottom: 0;
@@ -4876,7 +4881,7 @@ ul.insta-info-list {
   display: inline-block;
 }
 .event-stack a {
-  display: block;
+  display: table;
 }
 .section-accessibilities {
   background: #ffe2e5;

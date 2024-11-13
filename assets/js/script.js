@@ -268,11 +268,13 @@ flyingPages();
       focusOnSelect: true,
     });
     $('.navbar-nav').on('click', 'a', function (e) {
-      var anchor = $(this);
-      $('html, body')
-        .stop()
-        .animate({ scrollTop: $(anchor.attr('href')).offset().top - 5 }, 1000);
-      e.preventDefault();
+      try {
+        var anchor = $(this);
+        $('html, body')
+          .stop()
+          .animate({ scrollTop: $(anchor.attr('href')).offset().top - 5 }, 1000);
+        e.preventDefault();
+      } catch (error) {}
     });
     $('.navbar-nav').on('click', 'a', function () {
       $('.navbar-collapse').removeClass('in');
@@ -751,6 +753,6 @@ flyingPages();
   if (htGuest) {
     $('.js-ht-guest').addClass('guest').text(htGuest.trim());
   } else {
-    $('.js-ht-guest').text('Sự Kiện Cưới');
+    $('.js-ht-guest').text('Sự kiện cưới');
   }
 })(jQuery);

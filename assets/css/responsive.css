@@ -570,6 +570,9 @@
     height: 170px;
     width: 170px;
   }
+  .the-countdown .seperator-down img {
+    display: none;
+  }
   .the-countdown:before,
   .count-img:before,
   .count-img {
@@ -971,6 +974,9 @@
   .the-couple {
     margin-bottom: 40px;
     text-align: center;
+  }
+  .the-couple.bride {
+    margin-bottom: 0;
   }
   .couple-img {
     float: none !important;

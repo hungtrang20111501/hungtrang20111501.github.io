@@ -683,11 +683,6 @@ flyingPages();
         '@media (max-width: 799px){#menu-access{bottom: 238px!important;}}';
     }
   });
-  $('.btn-menu-close').click(function () {
-    $('tooltiptext').css('visibility', '');
-    clearInterval(myInterval);
-  });
-
   $(document).on('click', '#donate-modal .crypto-item', function () {
     let parent = $(this).parents('.donate-card');
     parent.find('.cryptos-box-view').show();

@@ -191,7 +191,8 @@
     width: 70%;
   }
   #wd-banner .banner_caption_text h2 {
-    font-size: 22px;
+    font-size: 23px;
+    margin-bottom: 20px;
   }
   .section-title p {
     font-size: 13px;
@@ -359,6 +360,9 @@
   }
   .event-stack p {
     font-size: 18px;
+  }
+  .event-stack a {
+    margin: 0 auto 6px;
   }
   .event-stack a,
   .event-stack ul li {

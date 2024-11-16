@@ -504,7 +504,7 @@ header#inner-navigation {
 }
 @media (max-width: 812px) {
   #inner-navigation .slicknav_nav {
-    height: 265px;
+    max-height: 265px;
     overflow-y: scroll;
     top: 63px;
   }
@@ -4636,7 +4636,7 @@ ul.insta-info-list {
   background-color: #fff0f1;
 }
 .donate-modal {
-  background-color: rgb(0, 0, 0);
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
   height: 100%;
@@ -4648,6 +4648,9 @@ ul.insta-info-list {
   top: 0;
   width: 100%;
   z-index: 999999;
+}
+.donate-modal.flex {
+  display: flex;
 }
 .donate-modal-content {
   -webkit-animation-duration: 0.4s;
@@ -5529,13 +5532,16 @@ textarea#content {
   width: 40px;
 }
 .weddingdate-section .mini_calendar td #today {
-  background-color: #df4758;
-  border-radius: 50%;
-  color: #fff;
-  display: inline-block;
-  font-weight: 700;
-  height: 30px;
-  line-height: 20px;
-  padding: 5px;
+  aspect-ratio: 1;
+  border-image: radial-gradient(#df4758 69%, #0000 70%) 84.5%/50%;
+  clip-path: polygon(-42% 0, 50% 91%, 142% 0);
+  display: inline-flex;
+  justify-content: center;
+  transform: translateY(2px);
   width: 30px;
+}
+.weddingdate-section .mini_calendar td #today span {
+  color: #fff;
+  font-weight: 700;
+  transform: translateY(-2px);
 }

@@ -141,7 +141,7 @@ flyingPages();
         $('.navbar-fixed-top').removeClass('sticky');
       }
     });
-    var wow = new WOW({ mobile: false });
+    var wow = new WOW();
     wow.init();
     $('.slider-active').owlCarousel({
       items: 1,
@@ -364,7 +364,7 @@ flyingPages();
       loop: true,
       speed: 1500,
       autoplay: {
-        delay: 6500,
+        delay: 5000,
         disableOnInteraction: true,
       },
 
@@ -489,14 +489,14 @@ flyingPages();
 
     if ($('#donate-modal').length && $('.buttonDonate').length && $('.donate-modal-close').length) {
       $(document).on('click', '.buttonDonate', function () {
-        $('#donate-modal').show();
+        $('#donate-modal').addClass('flex');
       });
       $(document).on('click', '.donate-modal-close', function () {
-        $('#donate-modal').hide();
+        $('#donate-modal').removeClass('flex');
       });
       $(document).on('click', 'body', function (e) {
         if (e.target.id == $('#donate-modal').attr('id')) {
-          $('#donate-modal').hide();
+          $('#donate-modal').removeClass('flex');
         }
       });
     }

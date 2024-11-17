@@ -74,7 +74,7 @@
     padding: 30px;
   }
   .cp-detail p {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.5;
   }
   .image-story:before {
@@ -1032,7 +1032,8 @@
     display: none;
   }
   #wd-banner .banner_caption_text {
-    top: 35%;
+    padding: 0;
+    top: 32%;
     width: 90%;
   }
   #wd-banner .banner_caption_text:before,

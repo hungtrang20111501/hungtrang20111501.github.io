@@ -1075,7 +1075,7 @@ header#inner-navigation {
   background: linear-gradient(to right, rgb(199, 19, 26), rgba(0, 0, 0, 0.6));
 }
 .black-overlay-se {
-  background: linear-gradient(-33deg, #000000 50%, #ffff0000);
+  background: linear-gradient(-33deg, #000000 20%, #ffff0000);
   height: 100%;
   left: 0;
   opacity: 0.8;
@@ -1455,6 +1455,7 @@ header#inner-navigation {
 }
 .slide-inner {
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   left: 0;
@@ -1463,12 +1464,15 @@ header#inner-navigation {
   width: 100%;
   z-index: 3;
 }
+.slide-inner.first {
+  background-position: center 30%;
+}
 .slide-inner:before {
   background-color: #000;
   content: '';
   height: 100%;
   left: 0;
-  opacity: 0.3;
+  opacity: 0.15;
   position: absolute;
   top: 0;
   width: 100%;
@@ -1625,6 +1629,7 @@ header#inner-navigation {
 .home-2 .quote-img img,
 .home-3 .quote-img img {
   border: 10px solid #fbfbfb;
+  object-fit: cover;
 }
 .wd-slide .ps_control_txt_icon .carousel-control {
   height: auto;
@@ -2555,6 +2560,9 @@ section.section-padding.our-story {
 #the-gallery {
   padding-bottom: 0;
   position: relative;
+}
+#the-gallery.empty-wish {
+  margin-bottom: 140px;
 }
 .portfolio-inner .mix {
   display: none;
@@ -3802,39 +3810,18 @@ li.royalwedding_Instagram ul.flickr {
 .blog-leftsidebar .col-md-8.col-sm-8.col-xs-12 {
   float: right;
 }
-.pagination {
-  float: left;
-  margin: 0 10px;
-}
 .blog-leftsidebar .wrap-pagination .pagination {
   float: inherit;
 }
 .blog-leftsidebar .wrap-pagination .pagination_detail {
   float: right;
 }
-.pagination a,
-.pagination span {
-  background: #eee;
-  border-radius: 50px;
-  color: #777;
-  display: inline-block;
-  font-size: 12px;
-  height: 30px;
-  line-height: 30px;
-  margin-right: 5px;
-  overflow: hidden;
-  text-align: center;
-  transition: all ease-in-out 0.3s;
-  width: 30px;
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
 }
-.pagination a.inactive:hover {
-  background: #ec2328;
-  color: #fff;
-  transition: all ease-in-out 0.3s;
-}
-.pagination span {
-  background-color: #ec2328;
-  color: #fff;
+.pagination li.disabled a > * {
+  cursor: not-allowed;
 }
 .pagination_detail {
   color: #666;
@@ -4235,7 +4222,7 @@ a.read-btn:hover {
   position: relative;
 }
 .widget-rsvp .widget-title {
-  color: #333;
+  color: #000;
   font-weight: 400;
   margin: 0 0 60px;
   position: relative;
@@ -4296,13 +4283,22 @@ a.read-btn:hover {
   text-align: center;
 }
 .ft-about-content .form-control {
-  background: #fbfbfb;
-  border: 1px dashed #fd4951;
+  background: #fff;
+  border: 1px dashed #df4758;
   border-radius: 8px;
   box-shadow: none;
+  color: #000;
+  font-size: 16px;
   height: 45px;
   margin-bottom: 28px;
   resize: none;
+}
+.ft-about-content .form-control#name {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.ft-about-content .form-control::placeholder {
+  color: #000;
 }
 .form-control {
   background-color: #272727;
@@ -4317,19 +4313,33 @@ a.read-btn:hover {
   width: 100%;
 }
 textarea.form-control {
-  min-height: 160px;
+  min-height: 200px;
   width: 100%;
 }
 .ft-about-content form button.btn {
   background-color: #ec2328;
   border-color: #ec2328;
+  border-radius: 8px;
   color: white;
+  font-family: 'Shantell Sans', cursive;
+  font-weight: 700;
   margin: 6px 0 0;
   padding: 8px 25px;
   text-transform: uppercase;
   transition: all 0.5s;
 }
-.ft-about-content form button.btn:hover {
+.ft-about-content form button.btn:hover,
+.ft-about-content form button.btn:focus,
+.ft-about-content form button.btn:active {
+  background-color: #ec2328;
+  border-color: #ec2328;
+  outline: 0;
+  outline-offset: 0;
+}
+.ft-about-content form button.btn[disabled] {
+  background: #ccc;
+  border-color: #ccc;
+  color: #000;
 }
 button.btn:hover,
 .btn-info:active:hover,
@@ -4361,7 +4371,6 @@ button.btn:hover,
 .ft-about-content {
   background: #fff;
   margin: 0 auto;
-  margin-top: 10px;
   padding: 0 15px 35px 15px;
   width: 100%;
   z-index: 1;
@@ -4392,7 +4401,6 @@ ul.insta-info-list {
 .footer-widgets {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
   min-height: 465px;
   position: relative;
 }
@@ -4607,30 +4615,51 @@ ul.insta-info-list {
 }
 .wish-box {
   background-color: #fff;
-  border: 5px solid #f23b43;
-  color: #333;
-  height: 557px;
-  overflow-y: auto;
+  border: 1px dashed #df4758;
+  border-radius: 8px;
+  color: #000;
+  height: 500px;
+  overflow: hidden;
   padding: 0;
+  position: relative;
 }
-.wish-box::-webkit-scrollbar {
-  background: #ccc;
-  width: 5px;
+.wish-box-spinner {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
-.wish-box::-webkit-scrollbar-thumb {
-  background-color: #999;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  border-radius: 0;
+.wish-box-content {
+  height: 100%;
+  overflow-y: auto;
+  padding: 4px 12px;
 }
 .wish-box .wish-box-item {
-  padding: 12px;
+  overflow-wrap: break-word;
+  padding: 6px 0;
+  word-break: break-word;
 }
-.wish-box .wish-box-item p {
-  color: #333;
-  margin: 0.5rem 0;
+.wish-box .wish-box-item:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.wish-box .wish-box-item .name {
+  color: #000;
+  font-size: 16px;
+}
+.wish-box .wish-box-item .time {
+  color: #666;
+  font-size: 14px;
+}
+.wish-box .wish-box-item .content {
+  color: #000;
+  font-size: 16px;
+  line-height: normal;
+  margin: 0;
+  white-space: pre-wrap;
 }
 .wish-box .wish-box-item.bg {
   background-color: #fff0f1;
@@ -4883,6 +4912,8 @@ ul.insta-info-list {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-height: 192px;
+  object-fit: cover;
 }
 .event-stack {
   margin-left: auto;
@@ -4932,10 +4963,6 @@ ul.insta-info-list {
   .text-center-sm {
     text-align: center;
   }
-}
-.btn {
-  boder-coler: red;
-  coler: red;
 }
 @media only screen and (max-width: 1200px) {
   .slicknav_nav {
@@ -5277,7 +5304,7 @@ ul.insta-info-list {
   z-index: 9999999;
 }
 .rsvp-widgets {
-  padding-bottom: 200px;
+  padding-bottom: 60px;
 }
 .emoji-picker {
   background: #fff;
@@ -5307,7 +5334,7 @@ textarea#content {
 .vitualTextarea {
   border: 1px dashed #fd4951;
   border-radius: 8px;
-  padding: 1px;
+  padding: 2px;
 }
 #wish-form textarea {
   border-radius: 0 !important;
@@ -5315,12 +5342,12 @@ textarea#content {
   resize: none;
 }
 #wish-form .textAreaIcons {
+  align-items: center;
   background: #fff;
-  border: 1px solid #f3f1f1;
-  border-top: none;
-  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 8px 0;
   position: relative;
-  text-align: right;
 }
 #wish-form .textAreaIcons span {
   color: #333;
@@ -5544,4 +5571,31 @@ textarea#content {
   color: #fff;
   font-weight: 700;
   transform: translateY(-2px);
+}
+@keyframes spinner-grow {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.spinner-grow {
+  -webkit-animation: spinner-grow 0.75s linear infinite;
+  animation: spinner-grow 0.75s linear infinite;
+  background-color: #df4758;
+  border-radius: 50%;
+  display: inline-block;
+  height: 3rem;
+  opacity: 0;
+  vertical-align: text-bottom;
+  width: 3rem;
+}
+@media only screen and (min-width: 992px) {
+  .lg-outer .lg-thumb {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+  }
 }

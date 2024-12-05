@@ -14,8 +14,8 @@ var photoGalleries = [
     subHtml: `<div class="lg-sub-html"><h4>Tình yêu là điều kiện trong đó hạnh phúc của người khác là điều cần thiết cho chính bạn</h4></div>`,
   },
   {
-    src: 'assets/images/wedding/HUG04424.JPG',
-    thumb: 'assets/images/wedding/HUG04424.JPG',
+    src: 'assets/images/wedding/HUG04424.jpg',
+    thumb: 'assets/images/wedding/HUG04424.jpg',
     subHtml: `<div class="lg-sub-html"><h4>Tình yêu không chỉ là một danh từ - nó là một động từ; nó còn hơn cả một cảm giác - đó là sự quan tâm, chia sẻ, giúp đỡ, hy sinh</h4></div>`,
   },
   {

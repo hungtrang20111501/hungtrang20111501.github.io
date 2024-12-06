@@ -34,8 +34,8 @@ var photoGalleries = [
     subHtml: `<div class="lg-sub-html"><h4>Tình yêu không có rào cản. Nó nhảy rào, nhảy rào, xuyên tường để đến đích với đầy hy vọng</h4></div>`,
   },
   {
-    src: 'assets/images/wedding/HUG05031.JPG',
-    thumb: 'assets/images/wedding/HUG05031.JPG',
+    src: 'assets/images/wedding/HUG04722.JPG',
+    thumb: 'assets/images/wedding/HUG04722.JPG',
     subHtml: `<div class="lg-sub-html"><h4>Tôi yêu bạn vì tất cả những gì bạn đang có, tất cả những gì bạn đã có, và tất cả những gì bạn chưa hiện hữu</h4></div>`,
   },
   {
@@ -52,11 +52,6 @@ var photoGalleries = [
     src: 'assets/images/wedding/HUG05567.JPG',
     thumb: 'assets/images/wedding/HUG05567.JPG',
     subHtml: `<div class="lg-sub-html"><h4>Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng khí</h4></div>`,
-  },
-  {
-    src: 'assets/images/wedding/HUG04722.JPG',
-    thumb: 'assets/images/wedding/HUG04722.JPG',
-    subHtml: `<div class="lg-sub-html"><h4>Đối với thế giới, bạn có thể là một người, nhưng với một người, bạn là cả thế giới</h4></div>`,
   },
 ];
 

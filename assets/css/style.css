@@ -1939,10 +1939,14 @@ section#about-us.aboutus {
 }
 @media (max-width: 767px) {
   .the-countdown,
-  .the-quote,
   .footer-widgets {
     background-attachment: initial !important;
     background-position: center !important;
+  }
+
+  .the-quote {
+    background-attachment: initial !important;
+    background-position: 70% center !important;
   }
 }
 .the-countdown:before {

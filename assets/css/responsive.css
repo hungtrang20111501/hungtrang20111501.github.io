@@ -390,11 +390,11 @@
     width: 240px;
   }
   .quote-img img {
-    border-width: 5px !important;
-    height: 200px;
+    border-width: 3px !important;
+    height: 180px;
     left: 55px;
     top: -5px;
-    width: 200px;
+    width: 180px;
   }
   .quote-counter {
     padding-left: 60px;
@@ -901,7 +901,7 @@
   .quote-img img {
     left: 0;
     position: inherit;
-    top: -40px;
+    top: -60px;
   }
   .quote-counter p {
     padding-bottom: 0;

@@ -1,7 +1,8 @@
 let biicore = {
   templatePremium: true,
   isPremium: true,
-  bgMusic: 'assets/audio/BeautifulInWhite-ShaneFilan.mp3',
+  bgMusic:
+    'https://cdn.jsdelivr.net/gh/hungtrang20111501/hungtrang20111501.github.io/assets/audio/BeautifulInWhite-ShaneFilan.mp3',
   alert: '[]',
   effect: { type: 'heart' },
   isAutoPlay: false,

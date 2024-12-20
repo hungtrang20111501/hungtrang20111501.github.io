@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @font-face {
   font-family: meriendaregular;
-  src: url(../fonts/MeriendaRegular.eot);
-  src: url(../fonts/MeriendaRegular.eot) format('embedded-opentype'),
-    url(../fonts/MeriendaRegular.woff2) format('woff2'),
-    url(../fonts/MeriendaRegular.woff) format('woff'),
-    url(../fonts/MeriendaRegular.ttf) format('truetype'),
-    url(../fonts/MeriendaRegular.svg#MeriendaRegular) format('svg');
+  src: url(https://cdn.jsdelivr.net/gh/hungtrang20111501/hungtrang20111501.github.io/assets/fonts/MeriendaRegular.eot);
+  src: url(https://cdn.jsdelivr.net/gh/hungtrang20111501/hungtrang20111501.github.io/assets/fonts/MeriendaRegular.eot)
+      format('embedded-opentype'),
+    url(https://cdn.jsdelivr.net/gh/hungtrang20111501/hungtrang20111501.github.io/assets/fonts/MeriendaRegular.woff2)
+      format('woff2'),
+    url(https://cdn.jsdelivr.net/gh/hungtrang20111501/hungtrang20111501.github.io/assets/fonts/MeriendaRegular.woff)
+      format('woff'),
+    url(https://cdn.jsdelivr.net/gh/hungtrang20111501/hungtrang20111501.github.io/assets/fonts/MeriendaRegular.ttf)
+      format('truetype'),
+    url(https://cdn.jsdelivr.net/gh/hungtrang20111501/hungtrang20111501.github.io/assets/fonts/MeriendaRegular.svg#MeriendaRegular)
+      format('svg');
 }
 body {
   background: #fff;
@@ -1096,7 +1101,7 @@ header#inner-navigation {
   z-index: 2;
 }
 #wd-banner .banner_caption_text:before {
-  background-image: url(../images/fancy.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/hungtrang20111501/hungtrang20111501.github.io/assets/images/fancy.png);
   background-repeat: no-repeat;
   background-size: 100%;
   content: '';
@@ -1107,7 +1112,7 @@ header#inner-navigation {
   width: 17%;
 }
 #wd-banner .banner_caption_text:after {
-  background-image: url(../images/fancy-1.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/hungtrang20111501/hungtrang20111501.github.io/assets/images/fancy-1.png);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -1968,7 +1973,7 @@ section#about-us.aboutus {
   z-index: 1;
 }
 .count-img:before {
-  background-image: url(../images/f1.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/hungtrang20111501/hungtrang20111501.github.io/assets/images/f1.png);
   background-repeat: no-repeat;
   background-size: 100%;
   content: '';
@@ -2084,7 +2089,7 @@ section#about-us.aboutus {
   z-index: 1;
 }
 .quote-img:before {
-  background-image: url(../images/f1.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/hungtrang20111501/hungtrang20111501.github.io/assets/images/f1.png);
   background-repeat: no-repeat;
   background-size: 100%;
   content: '';
@@ -2266,7 +2271,7 @@ section.section-padding.our-story {
   transform: rotate(-5deg);
 }
 .event-img:before {
-  background-image: url(../images/f1.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/hungtrang20111501/hungtrang20111501.github.io/assets/images/f1.png);
   background-repeat: no-repeat;
   background-size: 100%;
   content: '';
@@ -2277,7 +2282,7 @@ section.section-padding.our-story {
   width: 50%;
 }
 .event-img:after {
-  background-image: url(../images/f2.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/hungtrang20111501/hungtrang20111501.github.io/assets/images/f2.png);
   background-repeat: no-repeat;
   background-size: 100%;
   bottom: -39px;
@@ -4420,7 +4425,7 @@ ul.insta-info-list {
   z-index: 1;
 }
 .footer-note:before {
-  background: url(../images/footer-c.png);
+  background: url(https://cdn.jsdelivr.net/gh/hungtrang20111501/hungtrang20111501.github.io/assets/images/footer-c.png);
   background-repeat: no-repeat;
   background-size: 100%;
   content: '';
@@ -5376,7 +5381,7 @@ textarea#content {
   z-index: 333;
 }
 #wish-form .wishes-autocomplete-content input {
-  background-image: url('../images/searchicon.png') !important;
+  background-image: url('https://cdn.jsdelivr.net/gh/hungtrang20111501/hungtrang20111501.github.io/assets/images/searchicon.png') !important;
   background-position: 10px !important;
   background-repeat: no-repeat !important;
   border: 1px solid #ddd !important;

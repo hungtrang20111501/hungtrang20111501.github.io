@@ -296,7 +296,7 @@ flyingPages();
       var time = $('#clock').data('date');
 
       $('#clock').countdown(time.replace(/-/g, '/'), function (event) {
-        if (event.type == 'stoped') {
+        if (event.type == 'stopped') {
           var together = new Date($('#clock').data('date'));
 
           together.setHours(0);
